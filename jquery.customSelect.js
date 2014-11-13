@@ -124,7 +124,7 @@
                             }else{
                                 customSelectSpan.addClass(getClass('Open'));
                                 e.stopPropagation();
-                                $(document).one('mouseup.customSelect', function (e) {
+                                $(document).on('mouseup.customSelect', function (e) {
                                     if( e.target != $select.get(0) && $.inArray(e.target,$select.find('*').get()) < 0 ){
                                         $select.trigger('blur.customSelect');
                                     }else{
